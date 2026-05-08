@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BalanceOfMoney</title>
-    <link href="./css/index.css" rel="stylesheet">
+    <link rel="icon" href="./icons/favicon-icon-32x32.ico" type="image/x-icon">
+    <link href="./css/index.css" rel="stylesheet" />
     <script type="module" src="./js/index.js"></script>
   </head>
   <body class="page__body">
     <div class="container">
       <div class="wrapper">
-      <h1 class="title">Баланс</h1>
+        <picture class="img">
+          <source srcset="./img/money-img.webp" type="image/webp" />
+          <img class="img__icon" src="./img/money-img.png" alt="Иконка денег" loading="lazy" width="100" height="100" />
+        </picture>
+        <h1 class="title">Баланс</h1>
         <form class="form">
-          <input class="form__input input-cash" type="number" placeholder="Наличка">
-          <input class="form__input input-card" type="number" placeholder="Карта">
+          <input
+            class="form__input input-cash"
+            type="number"
+            placeholder="Наличка"
+          />
+          <input
+            class="form__input input-card"
+            type="number"
+            placeholder="Карта"
+          />
           <button class="form__button" type="submit">Расчитать</button>
         </form>
-        <p class="text"></p>
+        <div class="text"></div>
       </div>
     </div>
   </body>

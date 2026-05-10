@@ -1,0 +1,19 @@
+/* MuseoRegular */
+@font-face {
+  font-family: "Museo";
+  src: local("MuseoRegular"),
+    local("Museo-Regular"),
+    url("../fonts/MuseoRegular.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* MuseoMedium */
+@font-face {
+  font-family: "Museo";
+  src: local("MuseoMedium"),
+    local("Museo-Medium"),
+    url("../fonts/MuseoMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}

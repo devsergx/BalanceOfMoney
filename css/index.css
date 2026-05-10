@@ -54,6 +54,14 @@
   padding: 10px;
 }
 
+/* Скрыть стрелочки у input type number */
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .form__button {
   margin-bottom: 15px;
   background-color: var(--accent-color);
